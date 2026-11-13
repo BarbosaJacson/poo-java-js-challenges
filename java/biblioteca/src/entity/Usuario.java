@@ -16,4 +16,10 @@ public class Usuario {
     public String getNome() {
         return nome;
     }
+    @Override
+    public String toString() {
+
+        return "Id: %s | nome: %s".formatted(this.id,
+                this.nome);
+    }
 }

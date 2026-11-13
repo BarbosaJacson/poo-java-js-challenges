@@ -23,9 +23,15 @@ public class Livro {
         return disponivel;
     }
 
-
     public void setDisponivel(boolean disponivel) {
         this.disponivel = disponivel;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Livro: %s | Autor: %s | Disponível: %s".formatted(this.titulo,
+                this.autor, this.disponivel ? "Sim" : "Não");
     }
 
 }
